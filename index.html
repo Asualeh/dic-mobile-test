@@ -575,8 +575,8 @@
     <div class="mt-12 max-w-sm bg-ivory-50/95 backdrop-blur border border-gold-400/40 p-5">
       <div class="flex items-start justify-between gap-3">
         <div class="min-w-0">
-          <p class="text-[11px] uppercase tracking-[0.22em] text-gold-600 font-semibold">Next Prayer</p>
-          <p id="nextPrayer" class="font-display text-3xl text-forest-900 mt-1">Loading…</p>
+          <p class="text-[11px] uppercase tracking-[0.22em] text-gold-600 font-semibold">Prayer Schedule</p>
+          <p id="nextPrayer" class="font-display text-3xl text-forest-900 mt-1"><a href="#prayers">View prayer times</a></p>
           <p id="prayerNote" class="text-sm text-slate-500 mt-1">Whitby, Ontario</p>
         </div>
         <a
@@ -602,62 +602,11 @@
     <div class="text-center reveal mb-14">
       <p class="ornament justify-center text-gold-600 mb-3">Salah Schedule</p>
       <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl text-forest-900">Daily Prayer Timings</h2>
-      <p class="mt-4 max-w-2xl mx-auto text-slate-600">Iqamah timings for Iqra Masjid, Whitby — synced from the official Masjidal schedule.</p>
-      <div class="mt-6 flex items-center justify-center gap-2 sm:gap-5 w-full max-w-md mx-auto">
-        <button id="prayerPrev" type="button" class="prayer-nav" aria-label="Previous day" disabled>
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M10.25 3.25 5.75 8l4.5 4.75" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-        <div class="min-w-0 flex-1 px-1" aria-live="polite">
-          <p id="fullPrayerDate" class="font-semibold text-forest-800 text-[15px] sm:text-base leading-snug">Loading today’s date…</p>
-          <p id="fullPrayerHijri" class="mt-1 text-sm text-slate-500"></p>
-        </div>
-        <button id="prayerNext" type="button" class="prayer-nav" aria-label="Next day" disabled>
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M5.75 3.25 10.25 8l-4.5 4.75" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
+      <p class="mt-4 max-w-2xl mx-auto text-slate-600">Official prayer schedule for Iqra Masjid, Whitby.</p>
     </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-14">
-      <div class="bg-white border border-forest-900/10 px-3 py-6 text-center shadow-sm">
-        <span class="block text-2xl mb-2">🌙</span>
-        <strong class="block text-forest-900 text-sm">Fajr</strong>
-        <b data-full-p="Fajr" class="block mt-2 text-gold-600 text-lg">--:--</b>
-        <span data-full-p-starts="Fajr" class="hidden text-xs text-slate-400 mt-1"></span>
-      </div>
-      <div class="bg-white border border-forest-900/10 px-3 py-6 text-center shadow-sm">
-        <span class="block text-2xl mb-2">🌅</span>
-        <strong class="block text-forest-900 text-sm">Sunrise</strong>
-        <b data-full-p="Sunrise" class="block mt-2 text-gold-600 text-lg">--:--</b>
-        <span data-full-p-starts="Sunrise" class="hidden text-xs text-slate-400 mt-1"></span>
-      </div>
-      <div class="bg-white border border-forest-900/10 px-3 py-6 text-center shadow-sm">
-        <span class="block text-2xl mb-2">☀️</span>
-        <strong class="block text-forest-900 text-sm">Dhuhr</strong>
-        <b data-full-p="Dhuhr" class="block mt-2 text-gold-600 text-lg">--:--</b>
-        <span data-full-p-starts="Dhuhr" class="hidden text-xs text-slate-400 mt-1"></span>
-      </div>
-      <div class="bg-white border border-forest-900/10 px-3 py-6 text-center shadow-sm">
-        <span class="block text-2xl mb-2">🌤️</span>
-        <strong class="block text-forest-900 text-sm">Asr</strong>
-        <b data-full-p="Asr" class="block mt-2 text-gold-600 text-lg">--:--</b>
-        <span data-full-p-starts="Asr" class="hidden text-xs text-slate-400 mt-1"></span>
-      </div>
-      <div class="bg-white border border-forest-900/10 px-3 py-6 text-center shadow-sm">
-        <span class="block text-2xl mb-2">🌆</span>
-        <strong class="block text-forest-900 text-sm">Maghrib</strong>
-        <b data-full-p="Maghrib" class="block mt-2 text-gold-600 text-lg">--:--</b>
-        <span data-full-p-starts="Maghrib" class="hidden text-xs text-slate-400 mt-1"></span>
-      </div>
-      <div class="bg-white border border-forest-900/10 px-3 py-6 text-center shadow-sm">
-        <span class="block text-2xl mb-2">✨</span>
-        <strong class="block text-forest-900 text-sm">Isha</strong>
-        <b data-full-p="Isha" class="block mt-2 text-gold-600 text-lg">--:--</b>
-        <span data-full-p-starts="Isha" class="hidden text-xs text-slate-400 mt-1"></span>
-      </div>
+    <div class="mb-14">
+      <iframe title="Official Athan+ prayer schedule" src="https://timing.athanplus.com/masjid/widgets/embed?theme=1&amp;masjid_id=5AvP54KX&amp;labeljumuah1=Iqama&amp;labeljumuah2=Iqama" width="100%" height="560" loading="lazy" style="display:block;width:100%;border:0"></iframe>
+      <p class="mt-3 text-center"><a class="underline font-semibold" href="https://timing.athanplus.com/masjid/widgets/embed?theme=1&amp;masjid_id=5AvP54KX&amp;labeljumuah1=Iqama&amp;labeljumuah2=Iqama" target="_blank" rel="noopener">Open the official Athan+ schedule</a></p>
     </div>
 
     <a
@@ -680,10 +629,7 @@
       <article class="bg-white border border-forest-900/10 p-7 sm:p-8 shadow-sm">
         <h3 class="font-display text-3xl text-forest-900">Iqra Masjid</h3>
         <p class="text-gold-600 text-sm font-medium mb-5">Jumu’ah Salah Timings</p>
-        <div id="iqra-jummah-list" class="space-y-4 text-sm sm:text-base">
-          <div class="flex flex-col sm:flex-row sm:justify-between gap-1 border-b border-ivory-200 pb-3"><strong>1st Jummah</strong><span class="text-slate-500">Loading…</span></div>
-          <div class="flex flex-col sm:flex-row sm:justify-between gap-1 border-b border-ivory-200 pb-3"><strong>2nd Jummah</strong><span class="text-slate-500">Loading…</span></div>
-          <div class="flex flex-col sm:flex-row sm:justify-between gap-1"><strong>3rd Jummah</strong><span class="text-slate-500">Loading…</span></div>
+        <div id="iqra-jummah-list" class="space-y-4 text-sm sm:text-base"><p>Friday timings will be confirmed by masjid management.</p>
         </div>
       </article>
       <article class="bg-white border border-forest-900/10 p-7 sm:p-8 shadow-sm">
@@ -1086,22 +1032,7 @@
     </div>
 
     <div class="grid lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-      <form id="contact-form" class="bg-white border border-forest-900/10 p-8 space-y-5 h-full">
-        <h3 class="font-display text-3xl text-forest-900">Send a message</h3>
-        <div>
-          <label for="name" class="block text-sm font-medium mb-1">Name</label>
-          <input type="text" id="name" name="name" required class="w-full border border-ivory-200 px-4 py-3 focus:outline-none focus:border-forest-700" />
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-medium mb-1">Email</label>
-          <input type="email" id="email" name="email" required class="w-full border border-ivory-200 px-4 py-3 focus:outline-none focus:border-forest-700" />
-        </div>
-        <div>
-          <label for="message" class="block text-sm font-medium mb-1">Message</label>
-          <textarea id="message" name="message" rows="5" required class="w-full border border-ivory-200 px-4 py-3 focus:outline-none focus:border-forest-700"></textarea>
-        </div>
-        <button type="submit" class="w-full bg-forest-900 hover:bg-forest-800 text-white font-semibold py-3.5 transition">Submit Message</button>
-      </form>
+      <div class="bg-white border border-forest-900/10 p-8 space-y-5"><h3 class="font-display text-3xl text-forest-900">Contact Durham Islamic Centre</h3><a class="underline" href="mailto:info@durhamislamiccentre.ca">info@durhamislamiccentre.ca</a></div>
 
       <div class="flex flex-col min-h-0">
         <div class="flex items-end justify-between gap-4 mb-4">
@@ -1494,7 +1425,7 @@
     document.getElementById('prayerNote').textContent = 'Unable to load Masjidal timings';
   }
   bindPrayerNav();
-  fetchPrayerTimes();
+
 
   const aboutSlides = [...document.querySelectorAll('.about-slide')];
   let aboutIndex = 0;
@@ -1664,4 +1595,3 @@
 </script>
 </body>
 </html>
-<!-- GitHub Pages preview -->
